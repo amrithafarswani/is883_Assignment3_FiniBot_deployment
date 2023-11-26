@@ -40,8 +40,4 @@ if uploaded_file is not None:
    df = pd.read_csv(uploaded_file)  # You can modify this based on the file type
    st.dataframe(df)
 
-    # Perform analysis and display recommendation
-        analysis_result = perform_analysis(df, user_type)
-        st.markdown(f"## FiniBot's Analysis and Recommendation\n{analysis_result}")
-
 
