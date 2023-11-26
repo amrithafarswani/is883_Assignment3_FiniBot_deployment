@@ -35,9 +35,4 @@ uploaded_file = st.file_uploader("Upload spreadsheet", type=["csv", "xlsx"])
 # Radio button for user type
 user_type = st.radio("Select your expertise level:", ('Novice', 'Expert'))
 
-# Display uploaded spreadsheet
-if uploaded_file is not None:
-   df = pd.read_csv(uploaded_file)  # You can modify this based on the file type
-   st.dataframe(df)
-
 
